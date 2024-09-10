@@ -38,15 +38,17 @@ const Services = () => {
               <ServiceItem key={service.id}>
                 <h3>{service.header}</h3>
                 <p>{service.text}</p>
-                <button><Link to="/Booking">Book Now</Link></button>
+                <button><Link to="/Booking">Book Now &#8594;</Link></button>
               </ServiceItem>
             ))}
           </ServicesWrapper>
         </div>
       </div>
-      <div className='scroll-btns'>
-        <PrevButton onClick={handlePrevClick}>Prev</PrevButton>
-        <NextButton onClick={handleNextClick}>Next</NextButton>
+      <div className='scrolls'>
+        <div className='scroll-btns'>
+          <div><PrevButton onClick={handlePrevClick}>&#8592;</PrevButton></div>
+          <div><NextButton onClick={handleNextClick}>&#8594;</NextButton></div> 
+        </div>
       </div>
     </ServicesContainer>
   );

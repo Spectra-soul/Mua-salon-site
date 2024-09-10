@@ -34,17 +34,29 @@ export const ServicesContainer = styled.div`
   }
 
   .wrapping {
-    justify-content: center;
-    position: relative; 
     display: flex;
     width: 800px;
+    justify-content: center;
+    position: relative; 
     overflow: hidden;
   }
 
-  .scroll-btns {
-    margin-top: 20px;
+  .scrolls {
+    display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .scroll-btns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    justify-content: space-between;
+    position: relative; 
+    overflow: hidden;
+  }
+  .wrapping {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -82,8 +94,8 @@ export const ServiceItem = styled.div`
   }
 
   button {
-    padding: 10px 30px;
-    border-radius: 5px;
+    padding: 8px 30px;
+    border-radius: 2px;
     border: none;
     background-color: #d4a05ce8;
     color: #111;
@@ -104,15 +116,16 @@ export const ServiceItem = styled.div`
 `;
 
 export const NavigationButton = styled.button`
-  padding: 5px 10px;
+  padding: 2px 5px;
   border: none;
   background-color: #d4a05ce8;
   color: black;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12px;
   transition: background-color 0.3s ease;
-  margin: 100px;
+  margin: 0px;
+  fornt-weight: bold;
 
   &:hover {
     background-color: #ad7719;
@@ -125,7 +138,7 @@ export const NavigationButton = styled.button`
 
 export const PrevButton = styled(NavigationButton)`
   left: 10px; 
-  margin: 50px 20px;
+  margin: 20px;
 `;
 
 export const NextButton = styled(NavigationButton)`
